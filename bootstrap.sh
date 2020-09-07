@@ -8,3 +8,5 @@ yum -y groupinstall "Infiniband Support"
 systemctl enable rdma
 
 yum -y update
+
+exit 0
