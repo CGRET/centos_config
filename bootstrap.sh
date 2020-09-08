@@ -1,6 +1,6 @@
 #!/bin/sh
 
-yum -y install openssh-server net-tools
+yum -y install openssh-server net-tools nano
 systemctl enable sshd
 
 # Infiniband support
