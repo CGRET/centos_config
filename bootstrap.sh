@@ -7,6 +7,11 @@ systemctl enable sshd
 yum -y groupinstall "Infiniband Support"
 systemctl enable rdma
 
+# Install and configure avahi (AKA Bonjour)
+yum -y install avahi-daemon avahi-tools
+systemctl enable avahi-daemon
+
+# Update
 yum -y update
 
 exit 0
