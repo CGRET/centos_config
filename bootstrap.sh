@@ -10,6 +10,7 @@ systemctl enable rdma
 # Install and configure avahi (AKA Bonjour)
 yum -y install avahi-daemon avahi-tools
 systemctl enable avahi-daemon
+avahi-set-host-name $(hostname)
 
 # Update
 yum -y update
