@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# This scripts is called by curtin.
+# Check /etc/maas/preseeds/curtin_userdata_centos for the invocation
+
+# Install ssh server and some tools
 yum -y install openssh-server net-tools nano wget gcc rpm-build kernel-devel-$(uname-r)
 systemctl enable sshd
 
