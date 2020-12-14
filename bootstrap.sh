@@ -20,4 +20,6 @@ yum -y install mstflint
 # Update
 yum -y update
 
+rm /srv/.pass
+
 exit 0
